@@ -17,6 +17,7 @@ html {
   --buttos-bg-color: #f5f4fa;
 }
 /* body */
+
 body {
   margin: 0;
   background-color: var(--main-bg-color);
@@ -52,12 +53,12 @@ a {
   justify-content: flex-end;
   display: flex;
   align-items: center;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #ececec;
 }
 
 .page-header {
   padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -77,6 +78,8 @@ a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  color: #000000;
 }
 
 .logo {
@@ -91,6 +94,7 @@ a {
 .logo-item {
   color: var(--accent-color);
 }
+
 /* site-nav */
 
 .site-nav .link {
@@ -142,11 +146,36 @@ a {
   color: var(--accent-color);
 }
 
-/* button */
+.link.current {
+  color: #2196f3;
 
-.menu-button {
-  padding-top: 94px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
+.link-mail:hover,
+.link-mail:focus {
+  color: #2196f3;
+}
+
+.link-tel:focus,
+.link-tel:hover {
+  color: #2196f3;
+}
+
+.link-mail,
+.link-tel {
+  color: #757575;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* button */
 
 .list-button {
   display: inline-block;
@@ -154,6 +183,7 @@ a {
 
 .button-primary {
   cursor: pointer;
+
   background-color: var(--accent-color);
   color: var(--main-bg-color);
 
@@ -171,6 +201,7 @@ a {
 
 .button-secondary {
   cursor: pointer;
+
   background-color: var(--buttos-bg-color);
   color: var(--main-text-color);
 
@@ -196,10 +227,14 @@ img {
 
 .our-projects .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* padding-top: 94px;
-  padding-bottom: 34px; */
+}
+
+.our-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .card-set {
@@ -207,14 +242,18 @@ img {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  margin-top: 50px;
 }
 
 .item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+
+  box-sizing: border-box;
 }
 
 .item:nth-child(3n) {
@@ -230,6 +269,7 @@ img {
 }
 
 /* our projects */
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -254,6 +294,9 @@ img {
 
 .footer {
   background-color: var(--secondary-bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer > .container {
@@ -268,12 +311,10 @@ img {
 
 .footer .logo {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .address {
-  padding-bottom: 60px;
   display: block;
 }
 
@@ -295,7 +336,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   display: block;
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 .footer-mail:hover,

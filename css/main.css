@@ -71,6 +71,8 @@ a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  color: #000000;
 }
 
 .logo {
@@ -132,6 +134,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .link:hover,
 .link:focus {
   color: #2196f3;
@@ -146,13 +149,35 @@ a {
   letter-spacing: 0.02em;
 }
 
+.link-mail:hover,
+.link-mail:focus {
+  color: #2196f3;
+}
+
+.link-tel:focus,
+.link-tel:hover {
+  color: #2196f3;
+}
+
+.link-mail,
+.link-tel {
+  color: #757575;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 /* hero */
 
 .hero {
   background: #2f303a;
-  text-align: center;
 
+  text-align: center;
   display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -166,13 +191,15 @@ a {
   text-transform: uppercase;
   width: 696px;
   margin: 0 auto 30px;
-  margin-top: 200px;
-  margin-bottom: 30px;
 }
-/* section */
+
+/* feature-list */
 
 .feature-list {
-  padding: 94px 215px;
+  color: #757575;
+}
+
+.feature-list {
   display: flex;
   flex-wrap: inherit;
   padding-right: 0px;
@@ -190,8 +217,23 @@ a {
   padding-right: 0px;
 }
 
+/* section */
+
 .section-our-team {
   background: #f5f4fa;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section {
+  padding: 94px 215px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-work {
+  padding-bottom: 94px;
 }
 
 .section-work,
@@ -208,6 +250,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .section-text {
@@ -218,7 +261,6 @@ a {
   display: block;
   text-align: inherit;
   width: 270px;
-  /* padding-right: 30px; */
 }
 
 .section-name {
@@ -229,7 +271,7 @@ a {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .section-images {
@@ -237,7 +279,6 @@ a {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .item {
@@ -289,12 +330,8 @@ img {
   height: auto;
 }
 
-/* ul class feature-list  */
-.feature-list {
-  color: #757575;
-}
-
 /* button */
+
 .button {
   color: #ffffff;
   background-color: #2196f3;
@@ -312,12 +349,15 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: 0;
-  margin-bottom: 200px;
 }
 
 /* footer */
+
 .footer {
   background-color: #2f303a;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer > .container {
@@ -332,13 +372,7 @@ img {
 
 .footer .logo {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
-.address {
-  padding-bottom: 60px;
-  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-mail:hover,
@@ -364,7 +398,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   display: block;
-  padding-top: 9px;
+  margin-top: 9px;
 }
 
 /* черный основной цвет  #757575;*/
