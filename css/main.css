@@ -227,7 +227,7 @@ a {
 }
 
 .section {
-  padding: 94px 215px;
+  padding: 94px;
   display: flex;
   justify-content: center;
 }
